@@ -7,4 +7,9 @@ public class MenadzerPracownikow {
     public MenadzerPracownikow(HashMap<Integer, Pracownik> pracownicy) {
         this.pracownicy = pracownicy;
     }
+
+    public  void dodajPracownika(Pracownik pracownik){
+        Integer keyPracownik = pracownik.getIdPracownika();
+        pracownicy.put(keyPracownik,pracownik);
+    }
 }
