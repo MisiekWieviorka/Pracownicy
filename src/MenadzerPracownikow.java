@@ -12,4 +12,11 @@ public class MenadzerPracownikow {
         Integer keyPracownik = pracownik.getIdPracownika();
         pracownicy.put(keyPracownik,pracownik);
     }
+
+    public void usunPracownika(Pracownik pracownik){
+        if(pracownicy.containsKey(pracownik.getIdPracownika()))
+            pracownicy.remove(pracownik.getIdPracownika());
+        else
+            System.out.println("Pracownik o takim ID nie istnieje");
+    }
 }
