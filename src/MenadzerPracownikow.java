@@ -24,10 +24,12 @@ public class MenadzerPracownikow {
             System.out.println("Pracownik o takim ID nie istnieje");
     }
 
-    public void zaktualizujPracownika(int idPracownika, Pracownik nowyPracownik){
+    public void zaktualizujPracownika(int idPracownika, String nowaPozycja, int nowaPensja){
         if(pracownicy.containsKey(idPracownika))
         {
-            pracownicy.put(idPracownika,nowyPracownik);
+            Pracownik pracownik = znajdzPracownikaPrzezId(idPracownika);
+            pracownik.setPozycja(nowaPozycja);
+            pracownik.setPensja(nowaPensja);
         }
         else
             System.out.println("Pracownik o takim ID nie istnieje");

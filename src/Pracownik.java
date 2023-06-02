@@ -34,4 +34,8 @@ public class Pracownik {
     public void setPensja(int pensja) {
         this.pensja = pensja;
     }
+
+    public void setPozycja(String pozycja) {
+        this.pozycja = pozycja;
+    }
 }
