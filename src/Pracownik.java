@@ -5,11 +5,11 @@ public class Pracownik {
     private int idPracownika;
     private int pensja;
 
-    public Pracownik(String imie, String nazwisko, String pozycja, int idPracownika, int pensja) {
+    public Pracownik(String imie, String nazwisko, String pozycja, int pensja) {
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.pozycja = pozycja;
-        this.idPracownika = idPracownika;
+        this.idPracownika++;
         this.pensja = pensja;
     }
 
