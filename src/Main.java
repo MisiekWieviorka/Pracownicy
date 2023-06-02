@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 
 public class Main {
@@ -18,6 +20,8 @@ public class Main {
         menadzerPracownikow.dodajPracownika(pracownik3);
         menadzerPracownikow.dodajPracownika(pracownik4);
         menadzerPracownikow.dodajPracownika(pracownik5);
+
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
     }
 }
