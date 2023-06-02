@@ -21,6 +21,17 @@ public class Pracownik {
         return idPracownika;
     }
 
+    public String getImie() {
+        return imie;
+    }
+
+    public String getNazwisko() {
+        return nazwisko;
+    }
+
+    public int getPensja() {
+        return pensja;
+    }
     @Override
     public String toString() {
         return "Pracownik: " +
