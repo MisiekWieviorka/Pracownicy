@@ -31,4 +31,7 @@ public class Pracownik {
                 ", pensja = " + pensja;
     }
 
+    public void setPensja(int pensja) {
+        this.pensja = pensja;
+    }
 }
