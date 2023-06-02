@@ -13,4 +13,11 @@ public class Pracownik {
         this.pensja = pensja;
     }
 
+    public String getPozycja() {
+        return pozycja;
+    }
+
+    public int getIdPracownika() {
+        return idPracownika;
+    }
 }
