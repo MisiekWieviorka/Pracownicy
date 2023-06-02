@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class Main {
     public static void main(String[] args) {
         Pracownik pracownik1 = new Pracownik("John", "Doe", "Manager", 1, 75000);
@@ -8,6 +10,14 @@ public class Main {
         Pracownik pracownik6 = new Pracownik("Laura", "Taylor", "Human Resources Manager", 6, 70000);
         Pracownik pracownik7 = new Pracownik("Kevin", "Wilson", "IT Specialist", 7, 60000);
         Pracownik pracownik8 = new Pracownik("Samantha", "Davis", "Customer Service Representative", 8, 40000);
+
+        HashMap<Integer,Pracownik> pracownikHashMap = new HashMap<>();
+        MenadzerPracownikow menadzerPracownikow = new MenadzerPracownikow(pracownikHashMap);
+        menadzerPracownikow.dodajPracownika(pracownik1);
+        menadzerPracownikow.dodajPracownika(pracownik2);
+        menadzerPracownikow.dodajPracownika(pracownik3);
+        menadzerPracownikow.dodajPracownika(pracownik4);
+        menadzerPracownikow.dodajPracownika(pracownik5);
 
     }
 }
