@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class MenadzerPracownikow {
@@ -36,5 +37,13 @@ public class MenadzerPracownikow {
         else
             System.out.println("Nie znaleziono pracownika o danym ID");
         return null;
+    }
+
+    public void listaWszystkichPracowników(){
+        ArrayList<Pracownik> listaPracownikow = new ArrayList<>(pracownicy.values());
+        for (Pracownik employee: listaPracownikow
+        ) {
+            System.out.println(employee);
+        }
     }
 }
