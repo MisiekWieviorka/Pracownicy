@@ -28,4 +28,13 @@ public class MenadzerPracownikow {
         else
             System.out.println("Pracownik o takim ID nie istnieje");
     }
+
+    public Pracownik znajdzPracownikaPrzezId(int idPracownika) {
+        if(pracownicy.containsKey(idPracownika)){
+            return pracownicy.get(idPracownika);
+        }
+        else
+            System.out.println("Nie znaleziono pracownika o danym ID");
+        return null;
+    }
 }
