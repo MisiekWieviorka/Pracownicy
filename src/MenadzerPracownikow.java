@@ -52,13 +52,13 @@ public class MenadzerPracownikow {
         }
     }
 
-    public HashSet<Pracownik> szukajPracownikowPrzezPozycje(String pozycja){
+    public HashSet<Pracownik> szukajPracownikowPrzezNazwisko(String nazwisko){
         HashSet<Pracownik> listaPracownikow = new HashSet<>(pracownicy.values());
         Iterator<Pracownik> pracownicyIterator = listaPracownikow.iterator();
         while(pracownicyIterator.hasNext())
         {
-            Pracownik employee = pracownicyIterator.next();
-            if(!employee.getPozycja().equals(pozycja))
+            Pracownik pracownik = pracownicyIterator.next();
+            if(!pracownik.getPozycja().equals(nazwisko))
                 pracownicyIterator.remove();
         }
         return listaPracownikow;
