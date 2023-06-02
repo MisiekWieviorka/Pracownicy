@@ -20,4 +20,15 @@ public class Pracownik {
     public int getIdPracownika() {
         return idPracownika;
     }
+
+    @Override
+    public String toString() {
+        return "Pracownik: " +
+                "imie = '" + imie + '\'' +
+                ", nazwisko = '" + nazwisko + '\'' +
+                ", pozycja = '" + pozycja + '\'' +
+                ", idPracownika = " + idPracownika +
+                ", pensja = " + pensja;
+    }
+
 }
