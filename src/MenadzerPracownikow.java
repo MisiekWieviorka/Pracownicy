@@ -19,4 +19,13 @@ public class MenadzerPracownikow {
         else
             System.out.println("Pracownik o takim ID nie istnieje");
     }
+
+    public void zaktualizujPracownika(int idPracownika, Pracownik nowyPracownik){
+        if(pracownicy.containsKey(idPracownika))
+        {
+            pracownicy.put(idPracownika,nowyPracownik);
+        }
+        else
+            System.out.println("Pracownik o takim ID nie istnieje");
+    }
 }
