@@ -11,9 +11,10 @@ public class MenadzerPracownikow {
         this.pracownicy = pracownicy;
     }
 
-    public  void dodajPracownika(Pracownik pracownik){
+    public  void dodajPracownika(String imie, String nazwisko, String pozycja, int pensja){
+        Pracownik pracownik = new Pracownik(imie, nazwisko, pozycja, pensja);
         Integer keyPracownik = pracownik.getIdPracownika();
-        pracownicy.put(keyPracownik,pracownik);
+        this.pracownicy.put(keyPracownik,pracownik);
     }
 
     public void usunPracownika(Pracownik pracownik){
