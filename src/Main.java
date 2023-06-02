@@ -27,7 +27,6 @@ public class Main {
         while (true)
         {
             System.out.println("1.Dodaj pracownika");
-            System.out.println("2.Usuń pracownika");
             System.out.println("3.Zaktualizuj dane o pracowniku");
             System.out.println("4.Wyszukaj pracownika po ID");
             System.out.println("5.Wyświetl liste wszystkich pracownikow");
@@ -35,14 +34,10 @@ public class Main {
             System.out.println("Inna wartosc zakonczy program");
             int input = Integer.parseInt(bufferedReader.readLine());
             switch (input){
-                case 1:
+                case 1: {
                     menadzerPracownikow.dodajPracownika(pracownik7);
                     break;
-                case 2:
-                {
-                    int id = Integer.parseInt(bufferedReader.readLine());
-                    menadzerPracownikow.usunPracownika(menadzerPracownikow.znajdzPracownikaPrzezId(id));
-                    break;
+
                 }
                 case 3:
                 {
